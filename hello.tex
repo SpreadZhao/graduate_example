@@ -1,0 +1,42 @@
+\documentclass{xduugthesis}
+\usepackage{bookmark}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+% \usepackage{svg}
+\usetikzlibrary{shapes,arrows}
+
+\xdusetup{
+	style = { 
+		cjk-font = win, 
+		latin-font = tac,
+		bib-backend = biblatex,
+		font-type = font,
+		language = zh,
+		after-skip = {18pt,12pt,12pt,12pt,10pt,10pt},
+		before-skip = {20pt,14pt,14pt,14pt,12pt,12pt}
+	},
+	info = {
+		title = {
+			这是一个非常长非常长非常长\\的论文标题
+		},
+		author = {Spread Zhao},
+		major = {软件工程},
+		supervisor = {蔡徐坤},
+		department = {计算机科学与技术学院},
+		abstract = {chapter/abstract.tex},		% Chinese abstract
+		abstract* = {chapter/abstract_en.tex},	% English abstract
+		class-id = {123456},
+		student-id = {123456789},
+		bib-resource = {bibres/cites.bib},
+		keywords = {唱, 跳, 篮球},
+		keywords* = {Sing, Leap, Rap, Basketball},
+		acknowledgements = {chapter/thanks.tex}
+	}
+}
+\begin{document}
+\input{chapter/1-introduction}
+\input{chapter/2-research}
+\input{chapter/3-preload-bg}
+\end{document}
